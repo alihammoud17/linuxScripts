@@ -46,4 +46,4 @@ docker run --name jenkins-blueocean --restart=on-failure --detach \
   myjenkins-blueocean:2.492.1-1
 
 echo "Jenkins is running at http://localhost:8080"
-echo "Get the initial admin password using: sudo cat /var/jenkins_home/secrets/initialAdminPassword"
+echo "Get the initial admin password using: docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword"
